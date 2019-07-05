@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<job>
+    <sources>
+        <source directory="C:\Source Directory" recursive="true"/>
+        <source directory="C:\Another\Source Directory" />
+    </sources>
+    <locations>
+        <location identifier="IDENTIFIER01" directory="C:\Directory\Location\01" />
+        <location identifier="IDENTIFIER02" directory="C:\Directory\Location\02" />
+    </locations>
+    <documents>
+        <document pattern="STATEMENT_.{10}_1234.pdf" target="$IDENTIFIER01$\statement" groupby="YEAR" action="move" contains="Account Number: 1234" />
+        <document pattern="\d*_monthly.[pP][dD][fF]" target="$IDENTIFIER02$\Invoices" groupby="YEAR" dateprefix="yyyy-MM" action="copy" contains="SOME TEXT" />
+        <document pattern="yearly_statement\d.pdf" target="c:\customer\directory" groupby="YEAR" action="move" contains="37790/279855/INVRA" dateprefix="yyyy" />
+    </documents>
+</job>
