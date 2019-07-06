@@ -13,8 +13,7 @@ public class ITextTester {
 
   public void loadPDF() {
       try {
-        String file = "C:\\Users\\Roberto\\Downloads\\AMB0011 - IR-687566.PDF";
-        //File file = new File("C:\\My Stuff\\My General Share\\To Do\\SARS\\2016-03-01 till 2017-02-28\\To Process\\LEVY\\TS_B_ANNC_02_3_0_062016.pdf");
+        String file = "C:\\Test_Document.PDF";
         PdfReader reader = new PdfReader(file);
         int n = reader.getNumberOfPages();
         String str=PdfTextExtractor.getTextFromPage(reader, 1); //Extracting the content from a particular page.
