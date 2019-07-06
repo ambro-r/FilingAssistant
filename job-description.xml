@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <job>
     <sources>
-        <source directory="C:\Source Directory" recursive="true"/>
-        <source directory="C:\Another\Source Directory" />
+        <source directory="C:\Documents\Single Source" />
+        <source directory="C:\Documents" recursive="true"/>
     </sources>
     <locations>
-        <location identifier="IDENTIFIER01" directory="C:\Directory\Location\01" />
-        <location identifier="IDENTIFIER02" directory="C:\Directory\Location\02" />
+        <location identifier="IDENTIFIER01" directory="C:\location\01" />
+        <location identifier="IDENTIFIER02" directory="C:\location\02" />
     </locations>
     <documents>
         <document pattern="STATEMENT_.{10}_1234.pdf" target="$IDENTIFIER01$\statement" groupby="YEAR" action="move" contains="Account Number: 1234" />
