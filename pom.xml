@@ -8,8 +8,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <org-slf4j-version>1.7.21</org-slf4j-version>
-        <log4j-verison>1.2.17</log4j-verison>
+        <log4j.slf4j.impl.version>2.9.0</log4j.slf4j.impl.version>
         <itextpdf-version>5.5.12</itextpdf-version>
         <commons-lang-version>2.6</commons-lang-version>
         <commons-io-version>2.5</commons-io-version>
@@ -17,24 +16,11 @@
 
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${org-slf4j-version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>${org-slf4j-version}</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>${log4j-verison}</version>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${log4j.slf4j.impl.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
